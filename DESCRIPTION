@@ -1,0 +1,32 @@
+Package: toolbox
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "First",
+           family = "Last",
+           role = c("aut", "cre"),
+           email = "first.last@example.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    stringr (>= 1.4.0), 
+    purrr (>= 0.3.4),
+    rlang (>= 0.4.7),
+    ggplot2 (>= 3.3.2),
+    stargazer (>= 5.2.2),
+    magrittr (>= 1.5),
+    lubridate (>= 1.7.9),
+    dplyr (>= 1.0.0),
+    tibble (>= 3.0.3),
+    mlflow (>= 1.9.0)
+Suggests: 
+    testthat,
+    odbc,
+    RJDBC,
+    DBI,
+    mlflow

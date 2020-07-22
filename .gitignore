@@ -1,0 +1,5 @@
+tests/testthat
+.Rhistory
+.DS_Store
+.Renviron
+.Rproj.user
