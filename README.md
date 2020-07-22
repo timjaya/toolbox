@@ -12,7 +12,7 @@ Furthermore, OSX and Windows use different libraries (odbc vs. RJBDC), which mak
 
 #### Windows (Note: set up ODBC in your system first)
 ```r
-td_id <- "TDXYXY123_64" # the TD name you used in ODBC setup
+td_id <- "TDXYXY123" # the TD name you used in ODBC setup
 td_con <- create_td_connection(td_id)
 
 # alternatively, you can use odbc functions
@@ -56,8 +56,6 @@ run_query(td_con, query)
 ```
 
 ## Fiscper Functions
-
-(imported from markfairbanks/graingr)
 
 - `make_fiscper` to create Fiscper from Dates 
 - `fiscper_date` to create Dates from Fiscper
