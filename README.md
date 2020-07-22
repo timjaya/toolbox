@@ -1,5 +1,5 @@
 # toolbox
-A collection of useful R Functions for Data Science work in FCI.
+A collection of useful R Functions for Data Science work.
 
 Install using 
 
