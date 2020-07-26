@@ -41,7 +41,7 @@ create_td_connection <- function(td_id, password = NULL, jdbc_class_path = "~/te
   os <- Sys.info()['sysname']
   if (os == "Windows") {
     DBI::dbConnect(odbc::odbc(), td_id)
-  } else if (os == "Darwin") {
+  } else if (os == "Darwin" | os == "Linux") {
     td_driver <- RJDBC::JDBC(driverClass = "com.teradata.jdbc.TeraDriver",
                              classPath = jdbc_class_path,
                              identifier.quote = "'")
@@ -89,7 +89,7 @@ run_query <- function(td_con, sql_query) {
   if (os == "Windows") {
     result <- sql_query %>% map(~odbc::dbGetQuery(td_con, .x))
     result <- result[length(result)][[1]]
-  } else if (os == "Darwin") {
+  } else if (os == "Darwin" | os == "Linux") {
     for (q in sql_query){
       verb <- tolower(extract_sql_verb(q))
       if (verb == "create")  RJDBC::dbSendUpdate(td_con, q)
