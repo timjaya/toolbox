@@ -1,7 +1,8 @@
 # toolbox
 A collection of useful R Functions for Data Science work. Current functionality is focused on helping push/pull to TD, make fiscper, MLFlow logging, etc.
 
-Install using `devtools::install_github("timjaya/toolbox")`.
+## Installation
+Simply use `devtools::install_github("timjaya/toolbox")`.
 
 ## Teradata SQL 
 The most common way to run SQL in R is usually through `DBI`, `odbc`, and `RJDBC`. However, when using Teradata with R, there are some limitations. For example, multi-line SQL queries cannot be run with `dbGetQuery`, and often get DDL errors.
