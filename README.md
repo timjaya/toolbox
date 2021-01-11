@@ -1,5 +1,5 @@
 # toolbox
-A collection of useful R Functions for Data Science work. Includes functions that help push/pull to TD, make fiscper, MLFlow logging, etc.
+A collection of useful R Functions for Data Science work. Current functionality is focused on helping push/pull to TD, make fiscper, MLFlow logging, etc.
 
 Install using `devtools::install_github("timjaya/toolbox")`.
 
